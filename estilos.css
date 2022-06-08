@@ -45,7 +45,6 @@ font-family: 'Roboto', sans-serif;
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 .primary-container{
-    background-color: blue;
     height: auto; /* VAI VIRAR AUTO */
     background-color: #e5e5e5;
     margin: 92px 0px ; /* 92px(header e botton)*/ 
@@ -61,21 +60,59 @@ font-family: 'Roboto', sans-serif;
 
 .itens .texto{
     margin-bottom: 10px;
+    font-family: 'Righteous', cursive;
 }
 
-.prato{
+.produtos{
     display: flex;
     width: max-content;
     margin-bottom: 25px;
     overflow-x: scroll ;
+    font-family: 'Roboto', sans-serif;
+
 }
 
-.prato > div{
-    background-color: blue;
+.produtos > div{
+    background-color: #FFFFFF;
     width: 172px;
     height: 216px;
+    border-radius: 9px;
     margin-right: 16px;
-    margin-top: 16x;
+    /* margin-top: 16x; */
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0px 15px;
+}
+
+.box > img{
+    width: 144px;
+    height: 87px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+h1{
+    margin-bottom: 7px;
+}
+
+h2 {
+    margin-bottom: 7px;
+    font-size: 15px;
+    color: #A6A6A6;
+}
+
+h3{
+
+}
+
+strong {
+    font-weight: 1500px;
+    font-size: 16px;
+    color: #000000;
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
