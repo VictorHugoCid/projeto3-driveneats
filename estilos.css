@@ -7,6 +7,9 @@ font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
+body{
+    background-color: #e5e5e5;
+}
 .header{
     height: 92px;
     background-color: #CF2B2B;
@@ -18,6 +21,7 @@ font-family: 'Roboto', sans-serif;
     width: 100%;
     top: 0%;
     left: 0%;
+    z-index: 1;
 
 }
 
@@ -55,6 +59,7 @@ font-family: 'Roboto', sans-serif;
 .itens{
     /* margin-bottom: 25px; */
     padding-left: 20px;
+    margin-top: 15px;
     overflow-x: scroll ;
 }
 
@@ -63,7 +68,7 @@ font-family: 'Roboto', sans-serif;
     font-family: 'Righteous', cursive;
 }
 
-.produtos{
+.pratos, .bebidas, .sobremesas{
     display: flex;
     width: max-content;
     margin-bottom: 25px;
@@ -78,25 +83,32 @@ font-family: 'Roboto', sans-serif;
     height: 216px;
     margin-right: 16px;
     border-radius: 9px;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25)
-    /* , inset 0px 0px 0px 5px #32B72F */;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 0px 15px;
-
-    /* posicionar o checkMark */
-    /* position: relative; */
 }
 
-/* img .check{
-    width: 19px;
-    height: 19px;
-    z-index: 1;
-    position: absolute;
+.box div{
+    display: flex;
+    justify-content: space-between;
+}
 
-} */
+.check{
+    opacity: 0;
+}
+
+.selecionado{
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+.box.selecionado .check{
+    opacity:1;
+}
+
+
 
 
 .box > img{
@@ -156,6 +168,12 @@ strong {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+
+.buttonSelecao{
+    background-color: #32B72F;
+
 }
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
