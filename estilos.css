@@ -9,6 +9,7 @@ font-family: 'Roboto', sans-serif;
 
 body{
     background-color: #e5e5e5;
+    font-family: 'Roboto', sans-serif;
 }
 .header{
     height: 92px;
@@ -89,11 +90,18 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     padding: 0px 15px;
+
+    position: relative
 }
 
 .box div{
+    /* width: max-content; */
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: 10px;
+
 }
 
 .check{
@@ -130,6 +138,7 @@ h2 {
 }
 
 h3{
+    margin-right: 65px;
 
 }
 
@@ -171,14 +180,9 @@ strong {
 }
 
 
-.buttonSelecao{
+.fecharPedido{
     background-color: #32B72F;
-
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
 }
-
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* SELEÇÃO */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-
