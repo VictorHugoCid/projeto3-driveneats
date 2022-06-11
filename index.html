@@ -12,36 +12,73 @@
 
 </head>
 <body>
+ 
+    <div class="veu On Off"></div>
+    <div class="confirma On Off">
+
+        <div class="confirmaTitle On Off">
+            Confirme seu pedido
+        </div>
+        <div class="board On Off">
+            
+            <div class="prato">
+                <h5>Franguinho</h5>
+                <p> 14,90</p>
+            </div>
+            <div class="bebida">
+                <h5>Franguinho</h5>
+                <p> 14,90</p>
+                
+            </div>
+            <div class="sobremesa">
+                <h5>Franguinho</h5>
+                <p> 14,90</p>
+            </div>
+            <div class="total">
+                <h5> <strong>Total</strong></h5>
+                <p>  <strong>14,90</strong> </p>
+            </div>
+
+        </div>
+
+        <div class="confirmaButton On Off">
+            <div class="tudoCerto" onclick="enviarMsg()">Tudo certo, pode pedir!</div>
+            <div class="cancelar" onclick="cancelarVeu()">Cancelar</div>
+        </div>
+        
+        
+    </div>
+
     <div class="header">
         <div class="texto">
             <div class="title">DrivenEats</div>
-        
+
             <div class="subtitle">Sua comida em 6 minutos</div>
         </div>
-        
-    </div>    
+
+    </div>
 
     <div class="primary-container">
-        <div class="itens">
+        <div class="items">
             <div class="texto">Primeiro, seu prato</div>
             <div class="pratos">
                 <div class="box" onclick="selecaoPratos(this)">
                     <img src="./img/img-pratos/PFzao.jpg">
                     <!-- para linkar
-                                    img em pasta acima tem q usar dois pontos: ./img/img..... -->
-            
+                                        img em pasta acima tem q usar dois pontos: ./img/img..... -->
+
                     <h1> <strong>PFzão</strong> </h1>
                     <h2>
                         <p>#Rapidin</p>
                         <p>#ToComPressapra caralho abessa</p>
                     </h2>
-            
+
                     <div>
                         <h3 class="preco"> <strong>R$ 18,90</strong> </h3>
                         <img src="./img/img-outros/checkmark.png" class="check">
                     </div>
                 </div>
-            
+
                 <div class="box" onclick="selecaoPratos(this)">
                     <img src="./img/img-pratos/macarrao.jpg">
                     <h1> <strong>Macarrãozão</strong> </h1>
@@ -49,13 +86,13 @@
                         <p>#BateEntope</p>
                         <p>Carbo da semana</p>
                     </h2>
-            
+
                     <div>
                         <h3 class="preco"> <strong>R$ 20,90</strong> </h3>
                         <img src="./img/img-outros/checkmark.png" class="check">
                     </div>
                 </div>
-            
+
                 <div class="box" onclick="selecaoPratos(this)">
                     <img src="./img/img-pratos/risoto.jpg">
                     <h1> <strong>Risoto</strong> </h1>
@@ -63,13 +100,13 @@
                         <p>Camarãozin</p>
                         <p>Cadê meu peixe?</p>
                     </h2>
-            
+
                     <div>
                         <h3 class="preco"> <strong>R$ 35,80</strong> </h3>
                         <img src="./img/img-outros/checkmark.png" class="check">
                     </div>
                 </div>
-            
+
                 <div class="box" onclick="selecaoPratos(this)">
                     <img src="./img/img-pratos/veggie.jpg">
                     <h1> <strong>Prato veggie</strong> </h1>
@@ -77,13 +114,13 @@
                         <p>Cheide mato</p>
                         <p>#CuidaDosBichin</p>
                     </h2>
-            
+
                     <div>
                         <h3 class="preco"> <strong>R$ 30,50</strong> </h3>
                         <img src="./img/img-outros/checkmark.png" class="check">
                     </div>
                 </div>
-            
+
                 <div class="box" onclick="selecaoPratos(this)">
                     <img src="./img/img-pratos/burgao.jpg">
                     <h1> <strong>Burgao</strong> </h1>
@@ -91,23 +128,23 @@
                         <p>#EntopeAsVeia</p>
                         <p>#NemLigo</p>
                     </h2>
-            
+
                     <div>
                         <h3 class="preco"> <strong>R$ 25,10</strong> </h3>
                         <img src="./img/img-outros/checkmark.png" class="check">
                     </div>
                 </div>
-            
+
             </div>
         </div>
 
-        <div class="itens">
+        <div class="items">
             <div class="texto">Agora, sua bebida</div>
             <div class="bebidas">
                 <div class="box" onclick="selecaoBebidas(this)">
-                    <img src="./img/img-bebidas/coquinha.png" > 
+                    <img src="./img/img-bebidas/coquinha.png">
                     <h1> <strong>Coquinha gelada</strong> </h1>
-                    <h2>   
+                    <h2>
                         <p>#VemAçúcar</p>
                         <p>#TemZero?</p>
                     </h2>
@@ -119,9 +156,9 @@
                 </div>
 
                 <div class="box" onclick="selecaoBebidas(this)">
-                    <img src="./img/img-bebidas/Suco.jpg" > 
+                    <img src="./img/img-bebidas/Suco.jpg">
                     <h1> <strong>Sucos</strong> </h1>
-                    <h2>   
+                    <h2>
                         <p>#FingindoDieta</p>
                         <p>#Fitness</p>
                     </h2>
@@ -133,9 +170,9 @@
                 </div>
 
                 <div class="box" onclick="selecaoBebidas(this)">
-                    <img src="./img/img-bebidas/drinks.jpeg" > 
+                    <img src="./img/img-bebidas/drinks.jpeg">
                     <h1> <strong>Drinks</strong> </h1>
-                    <h2>   
+                    <h2>
                         <p>#BoraFikaLoco</p>
                         <p>#ChamaOSamu</p>
                     </h2>
@@ -147,9 +184,9 @@
                 </div>
 
                 <div class="box" onclick="selecaoBebidas(this)">
-                    <img src="./img/img-bebidas/vinho.jpg" > 
+                    <img src="./img/img-bebidas/vinho.jpg">
                     <h1> <strong>Taça de vinho</strong> </h1>
-                    <h2>   
+                    <h2>
                         <p>#SouChique</p>
                         <p>#Sommelier</p>
                     </h2>
@@ -161,9 +198,9 @@
                 </div>
 
                 <div class="box" onclick="selecaoBebidas(this)">
-                    <img src="./img/img-bebidas/agua.jpg" > 
+                    <img src="./img/img-bebidas/agua.jpg">
                     <h1> <strong>Aguinha</strong> </h1>
-                    <h2>   
+                    <h2>
                         <p>#TratarORim</p>
                         <p>#Hidratada</p>
                     </h2>
@@ -176,13 +213,13 @@
             </div>
         </div>
 
-        <div class="itens">
+        <div class="items">
             <div class="texto">Por fim, sua sobremesa</div>
             <div class="sobremesas">
                 <div class="box" onclick="selecaoSobremesas(this)">
-                    <img src="./img/img-sobremesa/pudim.png" > 
+                    <img src="./img/img-sobremesa/pudim.png">
                     <h1> <strong>Pudim de leite</strong> </h1>
-                    <h2>   
+                    <h2>
                         <p>Melhor pudim q vc vai comer</p>
                         <p>#HojePode</p>
                     </h2>
@@ -193,10 +230,10 @@
                     </div>
                 </div>
 
-                <div class="box" onclick="selecaoSobremesas(this)" >
-                    <img src="./img/img-sobremesa/cafezinho.jpg" > 
+                <div class="box" onclick="selecaoSobremesas(this)">
+                    <img src="./img/img-sobremesa/cafezinho.jpg">
                     <h1> <strong>Cafezin</strong> </h1>
-                    <h2>   
+                    <h2>
                         <p>#SóUmaChícra</p>
                         <p>#VemAzia</p>
                     </h2>
@@ -208,9 +245,9 @@
                 </div>
 
                 <div class="box" onclick="selecaoSobremesas(this)">
-                    <img src="./img/img-sobremesa/cheesecake.jpg" > 
+                    <img src="./img/img-sobremesa/cheesecake.jpg">
                     <h1> <strong>Cheesecake</strong> </h1>
-                    <h2>   
+                    <h2>
                         <p>Olha essa calda!</p>
                         <p>Um matin pra ficar bonito</p>
                     </h2>
@@ -222,9 +259,9 @@
                 </div>
 
                 <div class="box" onclick="selecaoSobremesas(this)">
-                    <img src="./img/img-sobremesa/brownie.jpg" > 
+                    <img src="./img/img-sobremesa/brownie.jpg">
                     <h1> <strong>Brownie</strong> </h1>
-                    <h2>   
+                    <h2>
                         <p>Que não é do Luiz</p>
                         <p>E ainda é barato</p>
                     </h2>
@@ -236,9 +273,9 @@
                 </div>
 
                 <div class="box" onclick="selecaoSobremesas(this)">
-                    <img src="./img/img-sobremesa/milfolhas.png" > 
+                    <img src="./img/img-sobremesa/milfolhas.png">
                     <h1> <strong>Milfolhas</strong> </h1>
-                    <h2>   
+                    <h2>
                         <p>Tem folha, mas não é veggie</p>
                         <p>Se tem folha, é caro</p>
                     </h2>
@@ -254,10 +291,13 @@
 
     <div class="botton">
         <div class="button" onclick="pedido()">
-            <p>Selecione os 3 itens </p> 
+            <p>Selecione os 3 itens </p>
             <p>para fechar o pedido.</p>
         </div>
     </div>
+
+
+
 
 
     <script src="scripts.js"></script>

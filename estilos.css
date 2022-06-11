@@ -11,13 +11,13 @@ body{
     background-color: #e5e5e5;
     font-family: 'Roboto', sans-serif;
 }
+
 .header{
     height: 92px;
     background-color: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: center;
-    
     position: fixed;
     width: 100%;
     top: 0%;
@@ -45,7 +45,7 @@ body{
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
-/* ITENS */
+/* ITEMS */
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
@@ -57,14 +57,13 @@ body{
     
 }
 
-.itens{
+.items{
     /* margin-bottom: 25px; */
     padding-left: 20px;
-    margin-top: 15px;
     overflow-x: scroll ;
 }
 
-.itens .texto{
+.items .texto{
     margin-bottom: 10px;
     font-family: 'Righteous', cursive;
 }
@@ -77,6 +76,7 @@ body{
     font-family: 'Roboto', sans-serif;
 
 }
+
 
 .box{
     background-color: #FFFFFF;
@@ -94,6 +94,8 @@ body{
     position: relative
 }
 
+
+
 .box div{
     /* width: max-content; */
     display: flex;
@@ -110,6 +112,7 @@ body{
 
 .selecionado{
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    transition: 300ms;
 }
 
 .box.selecionado .check{
@@ -185,4 +188,103 @@ strong {
     font-size: 20px;
     font-weight: 700;
     color: #ffffff;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* xxxxxxxxxx   BONUS   xxxxxxxxx */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+.veu{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8 ;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.confirma{
+    width: 377px;
+    height: 353px;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #50D074;
+    opacity: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+    z-index: 4;
+    border-radius: 16px;
+    position: fixed;
+    left: calc(50% - 377px/2 - 0.5px);
+    top: calc(50% - 353px/2 - 0.5px);
+
+}
+
+.confirmaTitle{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.board{
+    width: 100%;
+}
+
+.board div{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 25px 10px 25px;
+}
+
+.board strong{
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.confirmaButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmaButton p{
+    margin: 5px 0px;
+}
+
+.tudoCerto{
+    background-color: #ffffff;
+    color: #50D074;
+    font-weight: 600;
+    width: 333px;
+    height: 52px;
+    border-radius: 100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancelar{
+    width: 333px;
+    height: 52px;
+    border-radius: 100px ;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Off{
+    display: none;
+
 }
